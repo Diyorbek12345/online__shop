@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 150vh;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* .wrapper .products-box,
+.wrapper .cart-box {
+  border: 2px solid red;
+} */
+
+.card {
+  display: flex;
+  gap: 50px;
+}
+
+/* .box {
+  position: relative;
+  margin-top: 200px;
+}
+
+.cart-box {
+  position: sticky;
+  top: 0;
+} */
+
+.add_button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: grey;
+  border: none;
+}
+
+.plyus {
+  padding: 10px 30px;
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+.minus {
+  padding: 10px 30px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.title{
+  text-align: center;
+  color: blue;
+  margin-bottom: 20px;
+}
+
+.total{
+  margin-bottom: 20px;
+}
