@@ -47,9 +47,14 @@ const renderProduct = (props) => {
         </div>
       </div>`
   );
+  let myObj = JSON.stringify(products)
+
+  localStorage.setItem("myObj", myObj)
+  let myObj_serialized = JSON.parse(localStorage.getItem("myObj"));
+  console.log(myObj_serialized);
 };
 
-renderProduct("product");
+renderProduct ("product");
 
 productBox.addEventListener("click", (e) => {
   const { dataset } = e.target;
